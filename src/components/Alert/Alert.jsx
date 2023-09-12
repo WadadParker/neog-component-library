@@ -31,7 +31,7 @@ export const Alert = ({status, message}) => {
   }
 
   return (
-    <div className={`${styles[`alert-container`]} ${styles[`${status}`]}`}>
+    <div className={`${styles[`alert-container`]} ${styles[`${status}`]} ${styles.show}`}>
       <FontAwesomeIcon icon={selectIcon()} />
       <p className={styles.message}>{message}</p>
     </div>
