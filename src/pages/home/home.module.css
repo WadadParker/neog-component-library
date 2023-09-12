@@ -1,0 +1,9 @@
+.section {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.home-container {
+    display: grid;
+    gap: 5rem;
+}

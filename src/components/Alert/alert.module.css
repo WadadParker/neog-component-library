@@ -1,0 +1,29 @@
+.alert-container {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 0 1em;
+    border-radius: 5px;
+}
+.message {
+    margin-left: 10px;
+}
+.error {
+    color: #dc2626;
+    background-color: #fca5a5;
+}
+
+.success {
+    color: #22c55e;
+    background-color: #bbf7d0;
+}
+
+.warning {
+    color: #ca8a04;
+    background-color: #fef08a;
+}
+
+.notify {
+    color:#22d3ee;
+    background-color: #cffafe;
+}
