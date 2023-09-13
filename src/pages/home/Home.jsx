@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
-import {Alert, Avatar, Badge, Button, IconButton, FloatingButton} from "../../components";
+import {Alert, Avatar, Badge, Button, IconButton, FloatingButton, Heading, Text} from "../../components";
 
 export const Home = () => {
   const imageLink="https://storage.ko-fi.com/cdn/useruploads/display/8a8b9790-7303-4aee-881a-23ab131fa400_gear5daycopy.png";
@@ -37,6 +37,11 @@ export const Home = () => {
         <br />
         <FloatingButton type="logout"/>
         <FloatingButton />
+      </section>
+      <section className={styles.sectionTwo}>
+        <Heading type="sm">This is a small Heading</Heading>
+        <Text type="sm">This is a small text</Text>
+        <Text type="xxxlg">This is a small text</Text>
       </section>
     </div>
   )

@@ -2,8 +2,8 @@ import styles from "./text.module.css";
 
 import React from 'react'
 
-export const Text = () => {
+export const Text = ({type,children}) => {
   return (
-    <div>Text</div>
+    <p className={styles[`${type}`]}>{children}</p>
   )
 }
