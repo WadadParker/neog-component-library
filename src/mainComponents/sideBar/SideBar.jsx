@@ -1,16 +1,17 @@
 import styles from "./sideBar.module.css";
 
 import React from 'react'
+import {Link} from "react-router-dom";
 
 
 export const SideBar = () => {
   return (
     <nav className={styles.navbar}>
         <li className={styles.list}>
-            Home
+          <Link className={styles.link} to="/">Home</Link>
         </li>
         <li className={styles.list}>
-            Components
+           <Link className={styles.link} to="/components"> Components </Link>
         </li>
         <li className={styles.list}>
             <a className={styles.link} href="https://github.com/WadadParker/neog-component-library" target="_blank">Github</a>
