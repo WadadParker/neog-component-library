@@ -6,6 +6,7 @@ import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
 import {Alert, Avatar, Badge, Button, IconButton, FloatingButton, Heading, Text} from "../../components";
+import { Image } from "../../components";
 
 export const Home = () => {
   const imageLink="https://storage.ko-fi.com/cdn/useruploads/display/8a8b9790-7303-4aee-881a-23ab131fa400_gear5daycopy.png";
@@ -42,6 +43,7 @@ export const Home = () => {
         <Heading type="sm">This is a small Heading</Heading>
         <Text type="sm">This is a small text</Text>
         <Text type="xxxlg">This is a small text</Text>
+        <Image type="rounded" height={200} source={"https://i0.wp.com/otakuorbit.com/wp-content/uploads/2023/08/One-Piece-Episode-1071.16.png?ssl=1"} />
       </section>
     </div>
   )
