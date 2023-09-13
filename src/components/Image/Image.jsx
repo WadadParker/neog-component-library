@@ -2,8 +2,8 @@ import styles from "./image.module.css";
 
 import React from 'react'
 
-export const Image = () => {
+export const Image = ({type,source,name,height}) => {
   return (
-    <div>Image</div>
+    <img src={source} alt={name} className={styles[`${type}`]} height={height?height:400}/>
   )
 }

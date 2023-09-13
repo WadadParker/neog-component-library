@@ -2,8 +2,10 @@ import styles from "./heading.module.css";
 
 import React from 'react'
 
-export const Heading = () => {
+export const Heading = ({type,children}) => {
   return (
-    <div>Heading</div>
+    <div className={styles[`${type}`]}>
+      {children}
+    </div>
   )
 }

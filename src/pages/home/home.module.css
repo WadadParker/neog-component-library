@@ -1,0 +1,15 @@
+.section {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.home-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+.sectionTwo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+}
