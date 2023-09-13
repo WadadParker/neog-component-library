@@ -13,7 +13,7 @@ export const Home = () => {
   return (
     <div className={styles[`home-container`]}>
       <h1>This is home for now, lets make alll them components</h1>
-      <section className={styles.section}>
+      {/* <section className={styles.section}>
         <Alert status="notify" message="check out the new discount" />
         <section>
         <Avatar size="xxs" name="joyboy" src={imageLink}/>
@@ -57,7 +57,7 @@ export const Home = () => {
 
       </HorizontalCard>
       <BadgeCard badgeText={"New"} title="Heading 4">This is a card with a badge</BadgeCard>
-      <ShadowCard title="Heading 3">This is a shadow card</ShadowCard>
+      <ShadowCard title="Heading 3">This is a shadow card</ShadowCard> */}
     </div>
   )
 }
