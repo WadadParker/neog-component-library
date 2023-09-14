@@ -1,11 +1,13 @@
 import styles from "./document.module.css";
 import React from 'react'
+import { CodeBlock } from "react-code-blocks";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
 import { Avatar, Badge } from '../components'
+import {badgeCode,avatarBadge} from "./codeBlocks/CodeBlock";
 
 export const BadgeDoc = () => {
 
@@ -28,6 +30,14 @@ export const BadgeDoc = () => {
       <Badge avatar={<Avatar size="lg" name="joyboy" src={imageLink}/>} status="busy" />
       <Badge avatar={<Avatar size="lg" name="joyboy" src={imageLink}/>} status="away" />
       </section>
+
+      <h1>Usage</h1>
+      <b>Icon Badge</b>
+      <span><CodeBlock text={badgeCode} language="jsx" showLineNumbers={false} className={styles[`code-block`]}/></span>
+      <br/>
+      <b>Avatar Badge</b>
+      <span><CodeBlock text={avatarBadge} language="jsx" showLineNumbers={false} className={styles[`code-block`]}/></span>
+      <br/>
     </div>
   )
 }

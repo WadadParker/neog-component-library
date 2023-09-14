@@ -1,3 +1,7 @@
+.code-block {
+    color: red;
+}
+
 /* Alert doc style */
 .alert-buttons-list {
     margin: 1em 0;
@@ -46,4 +50,12 @@
     width: 300px;
     display: flex;
     justify-content: space-evenly;
+}
+
+/* Card styles */
+.cards-section {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-items: start;
+    gap: 1em;
 }

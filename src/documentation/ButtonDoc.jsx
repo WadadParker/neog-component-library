@@ -1,7 +1,9 @@
 import styles from "./document.module.css";
 import React from 'react'
+import { CodeBlock } from "react-code-blocks";
 
 import { Button,IconButton,FloatingButton } from "../components";
+import {buttonCode,iconButtonCode,floatingButtonCode} from "./codeBlocks/CodeBlock";
 
 export const ButtonDoc = () => {
   return (
@@ -30,6 +32,17 @@ export const ButtonDoc = () => {
       <FloatingButton type="logout"/>
       <FloatingButton />
       </section>
+
+      <h1>Usage</h1>
+      <b>Primary Button & Link</b>
+      <span><CodeBlock text={buttonCode} language="jsx" showLineNumbers={false} className={styles[`code-block`]}/></span>
+      <br/>
+      <b>Icon Buttons</b>
+      <span><CodeBlock text={iconButtonCode} language="jsx" showLineNumbers={false} className={styles[`code-block`]}/></span>
+      <br/>
+      <b>Floating Action Buttons</b>
+      <span><CodeBlock text={floatingButtonCode} language="jsx" showLineNumbers={false} className={styles[`code-block`]}/></span>
+      <br/>
     </div>
   )
 }

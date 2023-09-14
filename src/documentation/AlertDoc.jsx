@@ -1,7 +1,11 @@
 import styles from "./document.module.css";
 
 import React, { useEffect, useState } from 'react'
+import { CodeBlock } from "react-code-blocks";
+
+
 import { Alert } from '../components'
+import { alertCode } from "./codeBlocks/CodeBlock";
 
 export const AlertDoc = () => {
   const [showAlerts,setShowAlert]=useState({error:false,success:false,warning:false,notification:false})
@@ -46,6 +50,8 @@ export const AlertDoc = () => {
           {showAlerts.notification && <Alert status="notify" message="You have a new follower" />}
       </li>
       </ol>
+      <h1>Usage</h1>
+      <p><CodeBlock text={alertCode} language="jsx" showLineNumbers={false} className={styles[`code-block`]}/></p>
     </div>
   )
 }

@@ -27,7 +27,7 @@ export const ToggleCard = ({title,children}) => {
 
 export const TextCard = ({children}) => {
   return (
-    <div className={styles.card}>
+    <div className={styles[`text-card`]}>
       {children}
     </div>
   )
