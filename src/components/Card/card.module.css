@@ -18,6 +18,15 @@
     color: #dc2626;
 }
 
+/* Text card styles */
+.text-card {
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 1em;
+    width: 400px;
+
+}
+
 /* overlay card sytles */
 
 .overlay-card {
@@ -75,7 +84,7 @@
     background-color: var(--primary-color);
     color: white;
     right: 10px;
-    top: 5px;
+    top: 10px;
 }
 
 /* shadow card styles */

@@ -10,8 +10,8 @@ const ComponentCard=({name})=>
 {
     const navigate=useNavigate();
     return (
-        <li className={styles[`component-card`]}>
-            <h2 className={styles.heading} onClick={()=>navigate(`/components/${name}`)}>{name}</h2>
+        <li className={styles[`component-card`]} onClick={()=>navigate(`/components/${name}`)}>
+            <h2 className={styles.heading} >{name}</h2>
         </li>
     )
 }
